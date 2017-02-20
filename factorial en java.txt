@@ -1,0 +1,18 @@
+package project1;
+
+import java.util.ArrayList;
+
+public class Class1 {
+    public Class1() {
+        super();
+    }
+
+    public static void main(String[] args) {
+        int numero = 10;
+        int resultado = 1;
+        for (int x = 1; x <= numero; x++){
+            resultado *= x;
+        }
+        System.out.println(String.format("Resultado: %d", resultado));
+    }
+}

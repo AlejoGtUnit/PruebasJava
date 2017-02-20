@@ -1,0 +1,35 @@
+package project1;
+
+import java.util.ArrayList;
+
+public class Class1 {
+    public Class1() {
+        super();
+    }
+
+    public static void main(String[] args) {
+        Class1 class1 = new Class1();
+        ArrayList<Integer> notas = new ArrayList<Integer>();
+        notas.add(9);
+        notas.add(4);
+        notas.add(7);
+        notas.add(6);
+        notas.add(8);
+        notas.add(8);
+        notas.add(1);
+        notas.add(10);
+        notas.add(8);
+        notas.add(7);
+        if (notas.size() > 0){
+            int sumaNotas = 0;
+            for (int x = 0; x < notas.size(); x++){
+                System.out.println(String.format("Nota %d: %d", x+1, notas.get(x).intValue()));
+                sumaNotas += notas.get(x).intValue();
+            }
+            
+            float promedio = (float)((float)sumaNotas / (float)notas.size());
+            System.out.println(String.format("Promedio: %.2f", promedio));
+        }
+        
+    }
+}
